@@ -41,7 +41,7 @@ Compiler settings: solc 0.8.28, `evm_version = "paris"`, optimizer 200 runs.
 
 `.github/workflows/test.yml` runs the **forge-test** job (build + full test suite with `FOUNDRY_PROFILE=ci`)
 on every pull request, on pushes to `main`, and on manual dispatch.
-**CI must pass before a PR is merged into `main`.**
+**CI must pass before a PR is merged into `main`** (enforced by branch protection: required check `forge-test`, PR required, no force pushes).
 
 ## Secrets
 

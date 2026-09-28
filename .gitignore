@@ -16,6 +16,11 @@ broadcast/**/dry-run/
 *.pem
 keystore/
 
+# Payroll Merkle tool output: contains every salary + salt (confidential)
+tools/merkle/out/
+tools/merkle/tree*.json
+tools/merkle/claims/
+
 # Misc
 node_modules/
 *.log

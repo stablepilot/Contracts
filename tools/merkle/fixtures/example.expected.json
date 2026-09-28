@@ -1,0 +1,73 @@
+{
+  "payrollId": "1",
+  "periodId": "1",
+  "root": "0x697e19a1415787e47e118f3333f7273e08a1a92ba21f24c89170d832de14727f",
+  "total": "11800749999",
+  "totalUsdc": "11800.749999",
+  "leafEncoding": [
+    "uint256",
+    "uint256",
+    "uint256",
+    "address",
+    "uint256",
+    "bytes32"
+  ],
+  "entries": [
+    {
+      "payrollId": "1",
+      "periodId": "1",
+      "index": 0,
+      "employee": "0xe05fcC23807536bEe418f142D19fa0d21BB0cfF7",
+      "amount": "2500000000",
+      "amountUsdc": "2500",
+      "salt": "0x004b2069db7ceb2455a66ba21001bd2808e1ac82eb25c58570c16b00de9a7ed4",
+      "leaf": "0x8e709af169bdd1d36015bac9d39abd0774a445b71d8ce455c229294e875fc64b",
+      "proof": [
+        "0x81f859e13e8b830694d62ee14c6babc8852320da48a4ade6c516729aba571c3d",
+        "0x76af5b0939aceb1bf8bdf4aca969eb1e66784e81b994ad5f2c95626401d0f21a"
+      ]
+    },
+    {
+      "payrollId": "1",
+      "periodId": "1",
+      "index": 1,
+      "employee": "0x0376AAc07Ad725E01357B1725B5ceC61aE10473c",
+      "amount": "3100500000",
+      "amountUsdc": "3100.5",
+      "salt": "0xce8c21d881d8e333b3a02d733b47684333c6b920dcab78ef3f43df04dceaec8d",
+      "leaf": "0xfb4ba39aaf1b04bbc36e2a3e94dea1a281f8a7525211c899941ed8c3a49ec138",
+      "proof": [
+        "0xa2ec7bc04675f3656cb1ae9e4b6bb2b78a270a61a54a3250b62ca1f4112a6cac",
+        "0x5c56a5e5a38d0854de848adc5cbe46849484f66235ff785d278105210572b551"
+      ]
+    },
+    {
+      "payrollId": "1",
+      "periodId": "1",
+      "index": 2,
+      "employee": "0x0F89F1868aF3b14a5eca86ed9a5404A742a11454",
+      "amount": "1999999999",
+      "amountUsdc": "1999.999999",
+      "salt": "0xb0086366436e8e1e4f93948efac82100cf4ef86e26e67d78235c824c7c0bf402",
+      "leaf": "0x81f859e13e8b830694d62ee14c6babc8852320da48a4ade6c516729aba571c3d",
+      "proof": [
+        "0x8e709af169bdd1d36015bac9d39abd0774a445b71d8ce455c229294e875fc64b",
+        "0x76af5b0939aceb1bf8bdf4aca969eb1e66784e81b994ad5f2c95626401d0f21a"
+      ]
+    },
+    {
+      "payrollId": "1",
+      "periodId": "1",
+      "index": 3,
+      "employee": "0x1EB52434E761a893f069bb5C8a7C6665f8c4884C",
+      "amount": "4200250000",
+      "amountUsdc": "4200.25",
+      "salt": "0x1f5b90a4bfd1375beef5a22e5929e2dadf51288ebe0162827d72f1ccfa52e463",
+      "leaf": "0xa2ec7bc04675f3656cb1ae9e4b6bb2b78a270a61a54a3250b62ca1f4112a6cac",
+      "proof": [
+        "0xfb4ba39aaf1b04bbc36e2a3e94dea1a281f8a7525211c899941ed8c3a49ec138",
+        "0x5c56a5e5a38d0854de848adc5cbe46849484f66235ff785d278105210572b551"
+      ]
+    }
+  ]
+}

@@ -4,6 +4,12 @@ Foundry project for the **StablePilot** on-chain protocol contracts, extracted f
 
 - `contracts/StablePilotRegistry.sol` — per-transaction USDC protocol-fee registry for StablePilot modules
   (Payroll, Supply, DarkPool, zkCredit), with partner discounts, two-step ownership and two-step treasury updates.
+- `contracts/PrivatePayroll.sol` — **v1 PrivatePayroll module** (not deployed yet): pooled USDC payroll with
+  per-period Merkle commitments, pull-based claims (optionally to a fresh address / via relayer), protocol fee
+  per funded period through `StablePilotRegistry`. Design + privacy table: `contracts/PrivatePayroll-design.md`.
+- `contracts/script/DeployPrivatePayroll.s.sol` — deploy script (reads `REGISTRY_ADDRESS`, `USDC_ADDRESS`,
+  `PAYROLL_OWNER`, `EXPECTED_CHAIN_ID`; defaults to Arc Testnet).
+- `tools/merkle/` — TypeScript tool that builds a period's Merkle root and claim proofs from a CSV.
 - `contracts/script/Create2Factory.sol`, `contracts/script/DeployCreate2.s.sol` — deterministic CREATE2 deployment helpers.
 - `contracts/test/` — unit, fuzz and invariant tests; `contracts/test-helpers/MockERC20.sol` — test token.
 - `contracts/contract-metadata/StablePilotRegistry.json` — ABI + deployment record (address, chain ID, tx hash).
@@ -14,6 +20,8 @@ Foundry project for the **StablePilot** on-chain protocol contracts, extracted f
 | Network     | Chain ID  | StablePilotRegistry |
 |-------------|-----------|---------------------|
 | Arc Testnet | `5042002` | [`0x1070dc6494402aacaa5e701139d27f20de6527ff`](https://explorer.testnet.arc.io/address/0x1070dc6494402aacaa5e701139d27f20de6527ff) |
+
+USDC on Arc Testnet (ERC-20 interface of native USDC, 6 decimals): `0x3600000000000000000000000000000000000000`.
 
 ## Requirements
 

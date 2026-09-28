@@ -1,0 +1,24 @@
+# Foundry build output & cache
+out/
+cache/
+contracts/out/
+contracts/cache/
+
+# Broadcast logs: keep real deployments, ignore dry runs
+broadcast/*/dry-run/
+broadcast/**/dry-run/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+keystore/
+
+# Misc
+node_modules/
+*.log
+.DS_Store
+.idea/
+.vscode/

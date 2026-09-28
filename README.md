@@ -6,7 +6,7 @@ Foundry project for the **StablePilot** on-chain protocol contracts, extracted f
   (Payroll, Supply, DarkPool, zkCredit), with partner discounts, two-step ownership and two-step treasury updates.
 - `contracts/script/Create2Factory.sol`, `contracts/script/DeployCreate2.s.sol` — deterministic CREATE2 deployment helpers.
 - `contracts/test/` — unit, fuzz and invariant tests; `contracts/test-helpers/MockERC20.sol` — test token.
-- `contracts/contract-metadata/StablePilotRegistry.json` — ABI + deployment record.
+- `contracts/contract-metadata/StablePilotRegistry.json` — ABI + deployment record (address, chain ID, tx hash).
 - `contracts/StablePilotRegistry-design.md` — design document.
 
 ## Deployment
@@ -47,3 +47,7 @@ on every pull request, on pushes to `main`, and on manual dispatch.
 
 Never commit private keys, mnemonics, RPC keys or `.env` files. `.env` is git-ignored; pass deployer
 credentials via environment variables or a Foundry keystore (`cast wallet import`).
+
+## License
+
+[MIT](LICENSE) © StablePilot

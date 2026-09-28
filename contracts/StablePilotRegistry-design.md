@@ -6,10 +6,12 @@
 |---|---|
 | Status | Draft |
 | Authors | StablePilot Protocol Team |
-| Target Chain | Arc Testnet (chain ID 9870) → Arc Mainnet (chain ID 5042) |
+| Target Chain | Arc Testnet (chain ID 5042002) → Arc Mainnet (chain ID 5042) |
 | Language / Toolchain | Solidity 0.8.24, Foundry (forge 0.2.0) |
 | Milestone | Phase 1 — Testnet deployment |
 | EVM Version | Paris (Arc constraint) |
+
+> Note (2026-09-28): Arc Testnet chain ID corrected from 9870 to 5042002 (the network the registry is deployed on, at `0x1070dc6494402aacaa5e701139d27f20de6527ff`); other historical notes above are unchanged.
 
 ### Review tracker
 - [ ] Design review

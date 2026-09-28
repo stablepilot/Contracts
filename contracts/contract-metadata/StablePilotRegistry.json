@@ -1,9 +1,7 @@
 {
   "contractAddress": "0x1070dc6494402aacaa5e701139d27f20de6527ff",
   "network": "ARC-TESTNET",
-  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
-  "contract_code_path": "/home/user/app/contracts/StablePilotRegistry.sol",
-  "contract_compiled_code_path": "/home/user/app/contracts/out/StablePilotRegistry.sol/StablePilotRegistry.json",
+  "chainId": 5042002,
   "contract_network_and_links": {
     "Arc Testnet": "https://explorer.testnet.arc.io/address/0x1070dc6494402aacaa5e701139d27f20de6527ff"
   },
@@ -13,7 +11,8 @@
       "address": "0x1070dc6494402aacaa5e701139d27f20de6527ff",
       "explorerUrl": "https://explorer.testnet.arc.io/address/0x1070dc6494402aacaa5e701139d27f20de6527ff",
       "txHash": "0xc8698d39792556e90576c14aab3fd109861460bbfbae05f11d1e5044cb178bd0",
-      "deployedAt": "2026-09-25T18:56:57.296Z"
+      "deployedAt": "2026-09-25T18:56:57.296Z",
+      "chainId": 5042002
     }
   ],
   "abi": [

@@ -1,0 +1,106 @@
+{
+  "network": "Arc Testnet",
+  "chainId": 5042002,
+  "explorer": "https://explorer.testnet.arc.io",
+  "deployedAt": "2026-09-28T06:32:22Z",
+  "startBlock": 64396849,
+  "endBlock": 64396868,
+  "script": "contracts/script/DeployStablePilot.s.sol:DeployStablePilot",
+  "sourceCommit": "86e6298bf8dd76716c4f515a0754d8c4f4c6c622",
+  "compiler": {
+    "solc": "0.8.28",
+    "evmVersion": "paris",
+    "optimizer": true,
+    "optimizerRuns": 200
+  },
+  "deployer": "0x962dF2BD193Cd1406Dc83a7E4c004872C3ae59AC",
+  "usdc": "0x3600000000000000000000000000000000000000",
+  "contracts": {
+    "StablePilotRegistry": {
+      "address": "0xAE250726f116207b775113a9cFEf9e7DdD66E208",
+      "txHash": "0x744a461f76716fb50e35a0d52b01bb78682a8c4e65cd945a5958454e75fe26b3",
+      "block": 64396849,
+      "constructorArgs": {
+        "usdc": "0x3600000000000000000000000000000000000000",
+        "treasury": "0x65831439CFCa8559148D2DA4B03c4d745d00E1A0",
+        "initialOwner": "0x962dF2BD193Cd1406Dc83a7E4c004872C3ae59AC"
+      },
+      "verified": true,
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0xAE250726f116207b775113a9cFEf9e7DdD66E208"
+    },
+    "PrivatePayroll": {
+      "address": "0xd192606e25A4a57ea7baB8686065DF2019959CdC",
+      "txHash": "0x90fac9c5b795236db9f63700ca0666396d0ed144bf8d0e5d5c5f3b52c3209bdb",
+      "block": 64396852,
+      "constructorArgs": {
+        "registry": "0xAE250726f116207b775113a9cFEf9e7DdD66E208",
+        "initialOwner": "0x65831439CFCa8559148D2DA4B03c4d745d00E1A0"
+      },
+      "verified": true,
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0xd192606e25A4a57ea7baB8686065DF2019959CdC"
+    }
+  },
+  "configuration": {
+    "payrollModuleId": 0,
+    "payrollFeeBps": 10,
+    "feesEnabled": true,
+    "treasury": "0x65831439CFCa8559148D2DA4B03c4d745d00E1A0"
+  },
+  "ownership": {
+    "PrivatePayroll": {
+      "owner": "0x65831439CFCa8559148D2DA4B03c4d745d00E1A0",
+      "status": "final (set in constructor)"
+    },
+    "StablePilotRegistry": {
+      "owner": "0x962dF2BD193Cd1406Dc83a7E4c004872C3ae59AC",
+      "pendingOwner": "0x65831439CFCa8559148D2DA4B03c4d745d00E1A0",
+      "status": "pending: pendingOwner must call acceptOwnership() on the registry"
+    }
+  },
+  "transactions": [
+    {
+      "step": "deploy StablePilotRegistry",
+      "txHash": "0x744a461f76716fb50e35a0d52b01bb78682a8c4e65cd945a5958454e75fe26b3",
+      "block": 64396849,
+      "gasUsed": 1063226,
+      "effectiveGasPriceGwei": 30.0
+    },
+    {
+      "step": "deploy PrivatePayroll",
+      "txHash": "0x90fac9c5b795236db9f63700ca0666396d0ed144bf8d0e5d5c5f3b52c3209bdb",
+      "block": 64396852,
+      "gasUsed": 2744940,
+      "effectiveGasPriceGwei": 30.0
+    },
+    {
+      "step": "StablePilotRegistry.addModule(address,uint8)",
+      "txHash": "0xe2e80ca743f904b7e1dfb145feb89284339c05e0425eacf1c13e6b1e6775d299",
+      "block": 64396856,
+      "gasUsed": 50166,
+      "effectiveGasPriceGwei": 30.0
+    },
+    {
+      "step": "StablePilotRegistry.setFeeRate(uint8,uint16)",
+      "txHash": "0x41d5778be49379c33d2446c8d6be155fa99c2db136165d9ab1c55ff2163a80b6",
+      "block": 64396860,
+      "gasUsed": 48096,
+      "effectiveGasPriceGwei": 30.0
+    },
+    {
+      "step": "StablePilotRegistry.setFeesEnabled(bool)",
+      "txHash": "0xb60ae9a8ee58b8c74400f4e22b619fedad6a8358d20e241b9d7b197938ecc4cd",
+      "block": 64396864,
+      "gasUsed": 46907,
+      "effectiveGasPriceGwei": 30.0
+    },
+    {
+      "step": "StablePilotRegistry.transferOwnership(address)",
+      "txHash": "0x71103ebd40f21b84e8a3de3dbe18522af3d4971e6996a45900f84450cbe13037",
+      "block": 64396868,
+      "gasUsed": 47823,
+      "effectiveGasPriceGwei": 30.0
+    }
+  ],
+  "totalCostUsdc": "0.12003474",
+  "notes": "New registry. The previous registry 0x1070dc6494402aacaa5e701139d27f20de6527ff is unchanged and not used by this PrivatePayroll."
+}
